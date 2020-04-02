@@ -9,7 +9,7 @@
 
   function BillingCycleController($http, $location, msgs, tabs) {
     const vm = this
-    const url = 'http://140.238.179.166:3456/api/billingCycles'
+    const url = 'http://127.0.0.1:3456/api/billingCycles'
 
     vm.refresh = function () {
     const page = parseInt($location.search().page) || 1

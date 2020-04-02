@@ -7,7 +7,7 @@
   function DashboardController($http) {
     const vm = this
     vm.getSummary = function() {
-      const url = 'http://140.238.179.166:3456/api/billingSummary'
+      const url = 'http://127.0.0.1:3456/api/billingSummary'
       $http.get(url).then(function(response){
         const {credit = 0, debt = 0} = response.data
         vm.credit = credit
