@@ -4,7 +4,7 @@ angular.module('primeiraApp').component('valueBox', {
     colorClass: '@',
     value: '@',
     text: '@',
-    iconClass: '@',
+    iconClass: '@'
   },
   controller: [
     'gridSystem',
@@ -20,9 +20,9 @@ angular.module('primeiraApp').component('valueBox', {
         <p>{{ $ctrl.text }}</p>
       </div>
       <div class="icon">
-        <i class="fa {{ $ctrl.iconClass }}"></i>
+        <i class="{{ $ctrl.iconClass }}"></i>
       </div>
     </div>
   </div>
   `
-})
+});
