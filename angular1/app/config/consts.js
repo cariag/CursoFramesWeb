@@ -4,8 +4,8 @@ angular.module('primeiraApp').constant('consts', {
   owner: 'Cod3r',
   year: '2017',
   site: 'http://cod3r.com.br',
-  apiUrl: 'http://localhost:3003/api',
-  oapiUrl: 'http://localhost:3003/oapi',
+  apiUrl: 'http://127.0.0.1:3456/api',
+  oapiUrl: 'http://127.0.0.1:3456/oapi',
   userKey: '_primeira_app_user'
 }).run(['$rootScope', 'consts', function ($rootScope, consts) {
   $rootScope.consts = consts
